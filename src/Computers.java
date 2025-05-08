@@ -47,5 +47,12 @@ public class Computers {
     public void setLaptop(boolean laptop) {
         isLaptop = laptop;
     }
+    public Computers(String model, double diagonalOfMonitor, boolean isCompanyComputer, BigDecimal price, boolean isLaptop) {
+        this.model = model;
+        this.diagonalOfMonitor = diagonalOfMonitor;
+        this.isCompanyComputer = isCompanyComputer;
+        this.price = price;
+        this.isLaptop = isLaptop;
+    }
 }
 
