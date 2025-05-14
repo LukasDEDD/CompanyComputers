@@ -60,5 +60,16 @@ public class Computers {
         this.isCompanyComputer = isCompanyComputer;
         this.price = new BigDecimal("250.5");
     }
+
+    @Override
+    public String toString() {
+        return "Computers{" +
+                "model='" + model + '\'' +
+                ", diagonalOfMonitor=" + diagonalOfMonitor +
+                ", isCompanyComputer=" + isCompanyComputer +
+                ", price=" + price +
+                ", isLaptop=" + isLaptop +
+                '}';
+    }
 }
 
