@@ -15,9 +15,9 @@ public class Main {
     List <Computers> notebooks = new ArrayList<>();
         notebooks.add(direktor);
         notebooks.add(manager);
-        notebooks.size();
 
-        System.out.println(notebooks.get(1));
+        System.out.println(notebooks.get(0));
+        System.out.println("The number of laptops in the list is:" + notebooks.size());
 
         }
     }
