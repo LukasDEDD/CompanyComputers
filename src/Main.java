@@ -7,7 +7,8 @@ public class Main {
 
         Computers direktor =
                 new Computers ("Dell",250.5, false, new BigDecimal("475.80"),true );
-
     }
+        Computers manager =
+                new Computers (250, true);
 }
 

@@ -54,7 +54,7 @@ public class Computers {
         this.price = price;
         this.isLaptop = isLaptop;
     }
-    public Computers(String model, double diagonalOfMonitor, boolean isCompanyComputer, BigDecimal price) {
+    public Computers(double diagonalOfMonitor, boolean isCompanyComputer) {
         this.model = "Dell";
         this.diagonalOfMonitor = diagonalOfMonitor;
         this.isCompanyComputer = isCompanyComputer;
