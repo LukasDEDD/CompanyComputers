@@ -1,4 +1,5 @@
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,4 +21,11 @@ public class Main {
         System.out.println("The number of laptops in the list is:" + notebooks.size());
 
         }
-    }
+
+    Employee direktor =
+            new Employee("John", LocalDate.of(1975, 10, 10));
+    Employee manager =
+            new Employee("Fred", LocalDate.of(1980,3,12));
+
+
+}
