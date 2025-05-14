@@ -20,12 +20,15 @@ public class Main {
         System.out.println(notebooks.get(0));
         System.out.println("The number of laptops in the list is:" + notebooks.size());
 
-        }
 
-    Employee direktor =
+    Employee John =
             new Employee("John", LocalDate.of(1975, 10, 10));
-    Employee manager =
+    Employee Paul =
             new Employee("Fred", LocalDate.of(1980,3,12));
 
+    List <Employee> managment = new ArrayList<>();
+        managment.add(John);
+        managment.add(Paul);
 
+    }
 }
