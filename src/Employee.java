@@ -5,7 +5,7 @@ import java.util.List;
 public class Employee {
     private String name;
     private LocalDate birthDate;
-    private List <Computers> pc = new ArrayList<>();
+    private List<Computers> pc = new ArrayList<>();
 
     public Employee(String name, LocalDate birthDate, List computers) {
         this.name = name;
@@ -16,13 +16,14 @@ public class Employee {
     public Employee(String karl, LocalDate of) {
     } // Proc tento konstruktor a je zapotreb?, na hore mam uz jeden
 
-    public void addPc(Computers companyPc) {
+    public void addPcMethod(Computers companyPc) {
         pc.add(companyPc);
     }
 
     public void removePc(Computers companyPc) {
         pc.remove(companyPc);
     }
+
     public String getName() {
         return name;
     }
@@ -45,6 +46,8 @@ public class Employee {
 
     public void setPc(List pc) {
         this.pc = pc;
+
+
     }
 
     @Override
@@ -52,7 +55,8 @@ public class Employee {
         return "Employee{" +
                 "name='" + name + '\'' +
                 ", birthDate=" + birthDate +
-                ", computers=" + pc +
+                ", pc=" + pc +
                 '}';
     }
 }
+

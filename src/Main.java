@@ -23,8 +23,8 @@ public class Main {
         Employee manager =
                 new Employee("Karl", LocalDate.of(1995, 5, 31));
 
-        manager.addPc(managerComputer);
-        manager.addPc(
+        manager.addPcMethod(managerComputer);
+        manager.addPcMethod(
                 new Computers (250,
                         true)
         );
