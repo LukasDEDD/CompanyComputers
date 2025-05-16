@@ -14,7 +14,7 @@ public class Employee {
     }
 
     public Employee(String karl, LocalDate of) {
-    }
+    } // Proc tento konstruktor a je zapotreb?, na hore mam uz jeden
 
     public void addPc(Computers companyPc) {
         pc.add(companyPc);
