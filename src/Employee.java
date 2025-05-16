@@ -12,6 +12,10 @@ public class Employee {
         this.birthDate = birthDate;
         this.pc = computers;
     }
+
+    public Employee(String karl, LocalDate of) {
+    }
+
     public void addPc(Computers companyPc) {
         pc.add(companyPc);
     }

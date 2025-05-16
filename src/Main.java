@@ -10,16 +10,23 @@ public class Main {
         Computers direktor =
                 new Computers ("Dell",250.5, false, new BigDecimal("475.80"),true );
 
-        Computers manager =
+        Computers managerComputer =
                 new Computers (250, true);
 
     List <Computers> notebooks = new ArrayList<>();
         notebooks.add(direktor);
-        notebooks.add(manager);
+        notebooks.add(managerComputer);
 
         System.out.println(notebooks.get(0));
         System.out.println("The number of laptops in the list is:" + notebooks.size());
 
+        Employee manager =
+                new Employee("Karl", LocalDate.of(1995, 5, 31));
 
+        manager.addPc(managerComputer);
+        manager.addPc(
+                new Computers (250,
+                        true)
+        );
     }
 }
