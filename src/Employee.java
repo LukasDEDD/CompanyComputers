@@ -12,7 +12,6 @@ public class Employee {
         this.birthDate = birthDate;
         this.pc = computers;
     }
-
     public Employee(String karl, LocalDate of) {
     } // Proc tento konstruktor a je zapotreb?, na hore mam uz jeden
 
@@ -20,7 +19,7 @@ public class Employee {
         pc.add(companyPc);
     }
 
-    public void removePc(Computers companyPc) {
+    public void removePcMethod(Computers companyPc) {
         pc.remove(companyPc);
     }
 
@@ -40,11 +39,11 @@ public class Employee {
         this.birthDate = birthDate;
     }
 
-    public List getPc() {
+    public List<Computers> getPc() {
         return pc;
-    }
+    } // Bezpecnost
 
-    public void setPc(List pc) {
+    public void setPc(List<Computers> pc) {
         this.pc = pc;
 
 

@@ -26,7 +26,9 @@ public class Main {
         manager.addPcMethod(managerComputer);
         manager.addPcMethod(
                 new Computers (250,
-                        true)
+                        true) /* Vytvoř nový objekt typu Computers s parametry 250 a true,
+                        a ten předej jako argument metodě addPcMethod objektu manager*/
+
         );
     }
 }
