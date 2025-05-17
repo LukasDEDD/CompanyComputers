@@ -5,9 +5,9 @@ import java.util.List;
 public class Employee {
     private String name;
     private LocalDate birthDate;
-    private List<Computers> pc = new ArrayList<>();
+    private List<Computer> pc = new ArrayList<>();
 
-    public Employee(String name, LocalDate birthDate, List computers) {
+    public Employee(String name, LocalDate birthDate, List<Computer> computers) {
         this.name = name;
         this.birthDate = birthDate;
         this.pc = computers;
@@ -15,11 +15,11 @@ public class Employee {
     public Employee(String karl, LocalDate of) {
     } // Proc tento konstruktor a je zapotreb?, na hore mam uz jeden
 
-    public void addPcMethod(Computers companyPc) {
+    public void addPcMethod(Computer companyPc) {
         pc.add(companyPc); // ?????
     }
 
-    public void removePcMethod(Computers companyPc) {
+    public void removePcMethod(Computer companyPc) {
         pc.remove(companyPc); //????
     }
 
@@ -39,11 +39,11 @@ public class Employee {
         this.birthDate = birthDate;
     }
 
-    public List<Computers> getPc() {
+    public List<Computer> getPc() {
         return pc;
     } // Bezpecnost
 
-    public void setPc(List<Computers> pc) {
+    public void setPc(List<Computer> pc) {
         this.pc = pc;
 
 

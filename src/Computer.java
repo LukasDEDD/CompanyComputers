@@ -1,6 +1,6 @@
 import java.math.BigDecimal;
 
-public class Computers {
+public class Computer {
 
     private String model;
     private double diagonalOfMonitor;
@@ -47,14 +47,14 @@ public class Computers {
     public void setLaptop(boolean laptop) {
         isLaptop = laptop;
     }
-    public Computers(String model, double diagonalOfMonitor, boolean isCompanyComputer, BigDecimal price, boolean isLaptop) {
+    public Computer(String model, double diagonalOfMonitor, boolean isCompanyComputer, BigDecimal price, boolean isLaptop) {
         this.model = model;
         this.diagonalOfMonitor = diagonalOfMonitor;
         this.isCompanyComputer = isCompanyComputer;
         this.price = price;
         this.isLaptop = isLaptop;
     }
-    public Computers(double diagonalOfMonitor, boolean isCompanyComputer) {
+    public Computer(double diagonalOfMonitor, boolean isCompanyComputer) {
         this.model = "Dell";
         this.diagonalOfMonitor = diagonalOfMonitor;
         this.isCompanyComputer = isCompanyComputer;
