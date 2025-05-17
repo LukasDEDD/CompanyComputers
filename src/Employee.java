@@ -16,11 +16,11 @@ public class Employee {
     } // Proc tento konstruktor a je zapotreb?, na hore mam uz jeden
 
     public void addPcMethod(Computers companyPc) {
-        pc.add(companyPc);
+        pc.add(companyPc); // ?????
     }
 
     public void removePcMethod(Computers companyPc) {
-        pc.remove(companyPc);
+        pc.remove(companyPc); //????
     }
 
     public String getName() {
