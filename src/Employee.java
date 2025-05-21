@@ -5,7 +5,8 @@ import java.util.List;
 public class Employee {
     private String name;
     private LocalDate birthDate;
-    private List<Computer> pc = new ArrayList<>();
+    private List<Computer> pc = new ArrayList<>(); // seznam pocitacu, kde ma kazdy
+    // zamestnanec svuj pocitac
 
     public Employee(String name, LocalDate birthDate, List<Computer> computers) {
         this.name = name;
@@ -16,7 +17,8 @@ public class Employee {
     } // Proc tento konstruktor a je zapotreb?, na hore mam uz jeden
 
     public void addPcMethod(Computer companyPc) {
-        pc.add(companyPc); // ?????
+        pc.add(companyPc); // do seznamu pc pridej promenou companyPc typu Computer-tridy
+        // zde se spojujou 2 tridy
     }
 
     public void removePcMethod(Computer companyPc) {
